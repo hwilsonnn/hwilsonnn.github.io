@@ -1,0 +1,11 @@
+- Sole frontend developer at Trade Ledger for over 12 months during a critical period.
+- Architected Trade Ledger’s next-gen frontend using Next.js with: Typescript, Tailwind CSS, linting, internationalisation, pre-commit hooks, unit tests, Storybooks, Jenkins build pipeline, extensive contribution guides and documentation.
+- Developed multiple POCs and explored popular frameworks; presented findings to the wider engineering team and leadership for technical strategy decision-making.
+- Supported FE hiring process by creating FE job descriptions, leading technical interviews for senior roles, and writing onboarding documentation.
+- Led internationalisation of the legacy FE to support multi-language and multi-currency UIs.
+- Developed RBAC and Workflow permission E2E tests; replaced days of manual regression testing with automated and configurable tests which run within an hour.
+- Acted as Release Captain incl. creation and maintenance of scripts to streamline the deployment and release process of FE, BE and configurations; reducing manual effort from hours to minutes.
+- Optimised legacy code by removing a deprecable 20% of the codebase; resulting in faster and simpler Jenkins pipelines, and an improved developer experience.
+- Actively involved in product discovery and decision-making.
+- Completed general fixes such as: customer-reported bugs, pipeline issues, polyfilling errors, minification errors, and performance issues.
+- Architected and led end-to-end regression testing effort using TestCafe.

@@ -1,0 +1,8 @@
+- Cleaned up API documentation:
+  - Resolved invalid API contracts and interface types for the Rest API documentation.
+  - Fixed mistyped field names and suggested fixes for unnecessary circular dependencies in the GQL API documentation.
+- Investigated API testing tools:
+  - Gathered requirements by consulting internal stakeholders.
+  - Conducted investigations and created proof of concepts for multiple tools, including Stoplight, JMeter, Postman, Insomnia, Karate, ARC and SoapUI.
+  - Presented the investigative process to the stakeholders, highlighting the top-ranking options that aligned with the initial requirements.
+  - Developed a custom migration script to transfer all API collections to the selected tool, despite it not being the current tool of choice.

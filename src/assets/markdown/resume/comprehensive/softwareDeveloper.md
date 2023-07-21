@@ -1,0 +1,13 @@
+- Improved FE repository:
+  - Backfilled test coverage and resolved FE bugs.
+  - Added descriptive and unique data-testids for common components, improving the developer experience in E2E test writing.
+- Solely developed RBAC and Workflow permission E2E tests:
+  - Configurable implementation, for ease in adding new RBAC roles and workflows states to the test runs.
+  - Created extensive documentation for the test suite, which was valued by other SDETs.
+  - Replacing days of manual regression testing with an automated and configurable test that would run all the tests within an hour or two.
+- Led E2E testing effort:
+  - Established E2E testing project using TestCafe, with documentation for the selected tool.
+  - Created various business scenario tests for multiple customers.
+- Contributed as QA in feature validation:
+  - Created descriptive and informative bug tickets.
+  - Triaged incoming bug tickets, verifying their validity and providing additional context if needed.
