@@ -14,7 +14,9 @@ const Resume = () => {
   const contactDetails = [
     "+61 421 668 190",
     <a href="mailto:harry@wilson-family.com">harry@wilson-family.com</a>,
-    <a href="https://www.linkedin.com/in/harry--wilson/">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/harry--wilson/" target="_blank">
+      LinkedIn
+    </a>
   ]
 
   const otherDetails = ["Australian Citizen", "Sydney, Australia"]
