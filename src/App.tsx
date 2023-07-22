@@ -1,11 +1,11 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import { RouterProvider, createHashRouter } from "react-router-dom"
 import Root from "./routes"
 import ErrorPage from "./routes/ErrorPage"
 import background from "./assets/bgImage.svg"
 import Resume from "./routes/Resume/Resume"
 import { resumeLoader } from "./routes/Resume/resumeLoader"
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
