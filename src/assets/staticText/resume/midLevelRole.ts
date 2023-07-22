@@ -1,3 +1,4 @@
+export const midLevelRole = `
 - Sole frontend developer at Trade Ledger for over 12 months during a critical period.
 - Architected Trade Ledger’s next-gen frontend using Next.js with: Typescript, Tailwind CSS, linting, internationalisation, pre-commit hooks, unit tests, Storybooks, Jenkins build pipeline, extensive contribution guides and documentation.
 - Developed multiple POCs and explored popular frameworks; presented findings to the wider engineering team and leadership for technical strategy decision-making.
@@ -8,4 +9,4 @@
 - Optimised legacy code by removing a deprecable 20% of the codebase; resulting in faster and simpler Jenkins pipelines, and an improved developer experience.
 - Actively involved in product discovery and decision-making.
 - Completed general fixes such as: customer-reported bugs, pipeline issues, polyfilling errors, minification errors, and performance issues.
-- Architected and led end-to-end regression testing effort using TestCafe.
+- Architected and led end-to-end regression testing effort using TestCafe.`

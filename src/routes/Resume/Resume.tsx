@@ -55,7 +55,7 @@ const Resume = () => {
                 <Space />
                 <SectionHeading>Bio</SectionHeading>
                 <ContentContainer>
-                  <Markdown content={data.concise.bio} />
+                  <Markdown content={data.bio} />
                 </ContentContainer>
                 <Space />
                 <SectionHeading>Skills</SectionHeading>
@@ -79,71 +79,7 @@ const Resume = () => {
                     roleSubtitle="(prev. Software Developer, and Intern)"
                     isLast
                   >
-                    <Markdown content={data.concise.midLevelRole} />
-                  </ExperienceItem>
-                </div>
-              </div>
-            )
-          },
-          {
-            tabTitle: "Comprehensive",
-            content: (
-              <div className="flex max-w-full flex-col">
-                <Space />
-                <SectionHeading>Bio</SectionHeading>
-                <ContentContainer>
-                  <Markdown content={data.comprehensive.bio} />
-                </ContentContainer>
-                <Space />
-                <SectionHeading>Skills</SectionHeading>
-                <ContentContainer>
-                  <Markdown content={data.skills} />
-                </ContentContainer>
-                <Space />
-                <SectionHeading>Technologies</SectionHeading>
-                <ContentContainer>
-                  <Markdown content={data.technologies} />
-                </ContentContainer>
-                <Space />
-                <SectionHeading>Career History</SectionHeading>
-                <div className="flex flex-col">
-                  <ExperienceItem
-                    roleTitle="Senior Frontend Developer"
-                    timePeriod="June 2023 - Present"
-                    company="Trade Ledger"
-                    location="(Sydney, Australia)"
-                    startDate="June 2023"
-                  ></ExperienceItem>
-
-                  <ExperienceItem
-                    roleTitle="Mid-Level Frontend Developer"
-                    timePeriod="May 2022 - June 2023"
-                    company="Trade Ledger"
-                    location="(Sydney, Australia)"
-                    startDate="May 2022"
-                  >
-                    <Markdown content={data.comprehensive.midLevelRole} />
-                  </ExperienceItem>
-
-                  <ExperienceItem
-                    roleTitle="Software Developer"
-                    timePeriod="March 2020 - May 2022"
-                    company="Trade Ledger"
-                    location="(Sydney, Australia)"
-                    startDate="March 2020"
-                  >
-                    <Markdown content={data.comprehensive.softwareDeveloper} />
-                  </ExperienceItem>
-
-                  <ExperienceItem
-                    roleTitle="Internship"
-                    timePeriod="January 2020 - February 2020"
-                    company="Trade Ledger"
-                    location="(Sydney, Australia)"
-                    startDate="January 2020"
-                    isLast
-                  >
-                    <Markdown content={data.comprehensive.intern} />
+                    <Markdown content={data.midLevelRole} />
                   </ExperienceItem>
                 </div>
               </div>

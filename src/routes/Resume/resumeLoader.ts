@@ -1,31 +1,11 @@
-export const resumeLoader = async () => {
-  const getFileText = async (
-    fileName: string,
-    type: "comprehensive" | "concise" | "base"
-  ) => {
-    const file =
-      type === "base"
-        ? await fetch(`/src/assets/markdown/resume/${fileName}.md`)
-        : await fetch(`/src/assets/markdown/resume/${type}/${fileName}.md`)
+import { bio } from "../../assets/staticText/resume/bio"
+import { midLevelRole } from "../../assets/staticText/resume/midLevelRole"
+import { skills } from "../../assets/staticText/resume/skills"
+import { technologies } from "../../assets/staticText/resume/technologies"
 
-    return await file.text()
-  }
-
-  return {
-    skills: await getFileText("skills", "base"),
-    technologies: await getFileText("technologies", "base"),
-    comprehensive: {
-      bio: await getFileText("bio", "comprehensive"),
-      midLevelRole: await getFileText("midLevelRole", "comprehensive"),
-      softwareDeveloper: await getFileText(
-        "softwareDeveloper",
-        "comprehensive"
-      ),
-      intern: await getFileText("intern", "comprehensive")
-    },
-    concise: {
-      bio: await getFileText("bio", "concise"),
-      midLevelRole: await getFileText("midLevelRole", "concise")
-    }
-  }
-}
+export const resumeLoader = () => ({
+  skills: skills,
+  technologies: technologies,
+  bio: bio,
+  midLevelRole: midLevelRole
+})
