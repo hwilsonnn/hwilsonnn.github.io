@@ -3,15 +3,15 @@ import ReactDOM from "react-dom/client"
 import "./index.css"
 
 import { RouterProvider, createHashRouter } from "react-router-dom"
-import Root from "./routes"
 import ErrorPage from "./routes/ErrorPage"
 import Resume from "./routes/Resume/Resume"
 import { resumeLoader } from "./routes/Resume/resumeLoader"
+import App from "./App"
 
 const router = createHashRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <App />,
     errorElement: <ErrorPage />,
     children: [{ loader: resumeLoader, path: "/resume", element: <Resume /> }]
   }
