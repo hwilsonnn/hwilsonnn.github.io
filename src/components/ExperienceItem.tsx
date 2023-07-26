@@ -41,22 +41,22 @@ const ExperienceItem = ({
       }}
     >
       <h2 className="text-md font-semibold">{timePeriod}</h2>
-      <div className="flex items-center">
+      <div className="flex items-center text-center">
         <h2 className="py-1 text-xl font-bold">{roleTitle}</h2>
         <Space size="sm" />
         <h3
           className={clsx(
-            "pt-1 text-base font-light text-gray-300",
+            "text-base font-light text-gray-300",
             location && "italic"
           )}
         >
           {roleSubtitle}
         </h3>
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center text-center">
         <h3 className="text-base font-semibold">{company}</h3>
         <Space size="sm" />
-        <h3 className="pt-1 text-base font-light text-gray-300">{location}</h3>
+        <h3 className="text-base font-light text-gray-300">{location}</h3>
       </div>
       <Space />
       <div className="pb-6 text-justify">{children}</div>

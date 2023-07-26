@@ -1,8 +1,6 @@
-// import { useLoaderData } from "react-router-dom"
 import ExperienceItem from "../../components/ExperienceItem"
 import Markdown from "../../components/Markdown"
 import Space from "../../components/Space"
-import Tabs from "../../components/Tabs"
 import { resumeLoader } from "./resumeLoader"
 import SectionHeading from "../../components/SectionHeading"
 import useLoaderData from "../../utils/useLoaderData"
@@ -48,47 +46,40 @@ const Resume = () => {
         ))}
       </div>
       <Space />
-      <Tabs
-        tabs={[
-          {
-            tabTitle: "Concise",
-            content: (
-              <div className="flex max-w-full flex-col">
-                <Space />
-                <SectionHeading>Bio</SectionHeading>
-                <ContentContainer>
-                  <Markdown content={data.bio} />
-                </ContentContainer>
-                <Space />
-                <SectionHeading>Skills</SectionHeading>
-                <ContentContainer>
-                  <Markdown content={data.skills} />
-                </ContentContainer>
-                <Space />
-                <SectionHeading>Technologies</SectionHeading>
-                <ContentContainer>
-                  <Markdown content={data.technologies} />
-                </ContentContainer>
-                <Space />
-                <SectionHeading>Career History</SectionHeading>
-                <div className="flex flex-col">
-                  <ExperienceItem
-                    roleTitle="Mid-Level Frontend Developer"
-                    timePeriod="January 2020 - Present"
-                    company="Trade Ledger"
-                    location="(Sydney, Australia)"
-                    startDate="May 2022"
-                    roleSubtitle="(prev. Software Developer, and Intern)"
-                    isLast
-                  >
-                    <Markdown content={data.midLevelRole} />
-                  </ExperienceItem>
-                </div>
-              </div>
-            )
-          }
-        ]}
-      />
+      <div className="flex max-w-full flex-col">
+        <Space />
+        <SectionHeading>Bio</SectionHeading>
+        <ContentContainer>
+          <div className="text-justify">
+            <Markdown content={data.bio} />
+          </div>
+        </ContentContainer>
+        <Space />
+        <SectionHeading>Skills</SectionHeading>
+        <ContentContainer>
+          <Markdown content={data.skills} />
+        </ContentContainer>
+        <Space />
+        <SectionHeading>Technologies</SectionHeading>
+        <ContentContainer>
+          <Markdown content={data.technologies} />
+        </ContentContainer>
+        <Space />
+        <SectionHeading>Career History</SectionHeading>
+        <div className="flex flex-col">
+          <ExperienceItem
+            roleTitle="Mid-Level Frontend Developer"
+            timePeriod="January 2020 - Present"
+            company="Trade Ledger"
+            location="(Sydney, Australia)"
+            startDate="May 2022"
+            roleSubtitle="(prev. Software Developer, and Intern)"
+            isLast
+          >
+            <Markdown content={data.midLevelRole} />
+          </ExperienceItem>
+        </div>
+      </div>
       <SectionHeading>Education</SectionHeading>
       <div className="flex flex-col">
         <ExperienceItem
