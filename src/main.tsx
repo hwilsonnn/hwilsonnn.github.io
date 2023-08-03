@@ -7,7 +7,7 @@ import ErrorPage from "./routes/ErrorPage"
 import Resume from "./routes/Resume/Resume"
 import { resumeLoader } from "./routes/Resume/resumeLoader"
 import App from "./App"
-import Site from "./routes/About/Site"
+import Site, { loader } from "./routes/About/Site"
 
 const router = createHashRouter([
   {
@@ -21,7 +21,8 @@ const router = createHashRouter([
         children: [
           {
             path: "/about/site",
-            element: <Site />
+            element: <Site />,
+            loader: loader
           }
         ]
       }

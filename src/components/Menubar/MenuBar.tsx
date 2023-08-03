@@ -10,8 +10,8 @@ const MenuBar = () => {
       route: "about",
       label: "About",
       children: [
-        { route: "site", label: "This Site" },
-        { route: "me", label: "Me" }
+        { route: "site", label: "This Site" }
+        // { route: "me", label: "Me" }
       ]
     }
   ]
