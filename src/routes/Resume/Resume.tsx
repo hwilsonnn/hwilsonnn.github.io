@@ -11,8 +11,14 @@ const Resume = () => {
 
   const contactDetails = [
     "+61 421 668 190",
-    <a href="mailto:harry@wilson-family.com">harry@wilson-family.com</a>,
-    <a href="https://www.linkedin.com/in/harry--wilson/" target="_blank">
+    <a href="mailto:harry@wilson-family.com" className="hover:underline">
+      harry@wilson-family.com
+    </a>,
+    <a
+      href="https://www.linkedin.com/in/harry--wilson/"
+      target="_blank"
+      className="hover:underline"
+    >
       LinkedIn
     </a>
   ]

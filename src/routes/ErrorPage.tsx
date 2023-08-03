@@ -1,5 +1,5 @@
 import { isRouteErrorResponse, useRouteError } from "react-router-dom"
-import MenuBar from "../components/MenuBar"
+import Menubar from "../components/Menubar"
 import Space from "../components/Space"
 import background from "../assets/bgImage.svg"
 
@@ -14,7 +14,7 @@ const ErrorPage = () => {
     >
       <div className="my-6">
         <div className="flex flex-col items-center">
-          <MenuBar />
+          <Menubar />
           <div className="flex max-w-3/5 flex-col rounded-xl border border-gray-500 bg-[rgba(255,255,255,.10)] px-4 text-gray-200 shadow-2xl backdrop-blur-[2px]">
             {isRouteErrorResponse(error) ? (
               <div className="flex w-full flex-col content-center items-center">
